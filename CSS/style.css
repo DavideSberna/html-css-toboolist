@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(232, 232, 232);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.header{
+    background-color: white;
+}
+.header section {
+    height: 100px;
+}
+.header section .div1 {
+    height: 100%;
+    display: inline-block;   
+}
+.header section .div2 {
+    height: 100%;
+    line-height: 100px;
+    display: inline-block;   
+}
+.header section .div1 img{
+    width: 60px;
+    margin-left: 20px;   
+}
+.header section .div2 h1{
+    font-size: 40px;
+    display: inline;
+}
+
+
+
+
+.main{
+    margin: 30px 0px 0px 100px;
+}
+
+.main #buttonTask, .main #buttonSection{
+    border-radius: 4px;
+    margin: 3px 2px 2px 0px;
+    padding: 4px 6px 4px 6px;
+    border: solid 1px;
+}
+
+.main #buttonTask{
+    background-color: rgb(3, 179, 255);
+    border: solid 1px rgb(3, 179, 255);
+    color: white;
+}
+.main #buttonSection{
+    background-color: rgb(255, 255, 255);
+    border: solid 1px rgb(225, 225, 225);
+    color: rgb(225, 225, 225);
+}
+
+
+
+.divAddTask{
+    width: 60%;
+    background-color: white;
+    padding: 10px 0px 5px 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+.fa-circle-check{
+    color: rgb(3, 198, 23);
+    margin: 0px 5px 0px 0px;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 12px 7px 0px 0px;
+}
+
+.buttonEditorial {
+    background-color: rgb(3, 179, 255);
+    border: solid 1px rgb(3, 179, 255);
+    color: white;
+    border-radius: 12px;
+    margin: 3px 2px 2px 0px;
+    padding: 3px 6px 3px 6px;
+    border: solid 1px;
+}
