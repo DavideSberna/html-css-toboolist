@@ -1,44 +1,46 @@
+
+
+/* <!-- setting restart body and total document ----------------------------------------------- --> */
+
 *{
     margin: 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
-    background-color: rgb(232, 232, 232);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    background-color: rgb(243, 243, 243);
+    font-size: 21px;
+    color: rgb(51, 51, 51);
 }
 
 
+/* <!-- setting header (logo e nome logo) ----------------------------------------------- --> */
 .header{
     background-color: white;
+    padding-left: 30px;
 }
 .header section {
-    height: 100px;
+    height: 100px;  
 }
-.header section .div1 {
-    height: 100%;
-    display: inline-block;   
-}
-.header section .div2 {
-    height: 100%;
+.header section div {
     line-height: 100px;
-    display: inline-block;   
+    display: flex;
+    justify-content:left;
+    align-items: center;
 }
-.header section .div1 img{
-    width: 60px;
-    margin-left: 20px;   
+.header section div img{
+    width: 70px;   
 }
-.header section .div2 h1{
-    font-size: 40px;
-    display: inline;
+.header section div h1{
+    font-size: 50px;
 }
 
 
 
-
+/* <!-- setting main, section and button add/selected task ----------------------------------------------- --> */
 .main{
-    margin: 30px 0px 0px 100px;
+    margin: 80px 0px 0px 100px;
 }
 
 .main #buttonTask, .main #buttonSection{
@@ -47,46 +49,144 @@ body{
     padding: 4px 6px 4px 6px;
     border: solid 1px;
 }
-
 .main #buttonTask{
     background-color: rgb(3, 179, 255);
     border: solid 1px rgb(3, 179, 255);
     color: white;
+    margin-left: 50px;
 }
+.main #buttonTask:hover{
+    background-color: rgb(0, 146, 209);
+    border: solid 1px rgb(3, 179, 255);
+    color: white;
+    margin-left: 50px;
+}
+
 .main #buttonSection{
     background-color: rgb(255, 255, 255);
-    border: solid 1px rgb(225, 225, 225);
-    color: rgb(225, 225, 225);
+    border: solid 1px rgb(211, 211, 211);
+    color: rgb(211, 211, 211);
+}
+.main #buttonSection:hover{
+    background-color: rgb(4, 221, 0);
+    border: none;
+    color: rgb(255, 255, 255);
 }
 
-
-
-.divAddTask{
-    width: 60%;
-    background-color: white;
-    padding: 10px 0px 5px 20px;
-    border-radius: 5px;
+.main section{
+    width: 80%;
     margin: 0 auto;
-    margin-bottom: 5px;
+    border-radius: 0px;
+    background-color: white;
+    margin-bottom: 2px; 
+}
+.main section:nth-child(1){
+    border-radius: 5px 5px 0 0;
+    padding: 10px 0px 7px;
+}
+.main section:nth-child(2){
+    border-radius: 0 0 5px 5px;
+    padding-bottom: 30px;
+    padding: 1px 0px 45px;
 }
 
+
+
+
+
+/* <!-- setting position content of all elements in main section ----------------------------------------------- --> */
 .fa-circle-check{
     color: rgb(3, 198, 23);
     margin: 0px 5px 0px 0px;
 }
-
-li{
+.fa-circle-xmark{
+    color: rgb(230, 0, 0);
+    margin: 0px 5px 0px 0px;
+}
+ul {
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.divAddTask #iconTask {
+    font-size: 22px;
+}
+.divAddTask h3 {
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.divAddTask li{
     list-style-type: none;
     display: inline-block;
-    margin: 12px 7px 0px 0px;
+    padding: 3px 0 3px 0;
+}
+.divAddTask ul:hover{
+    background-color: rgb(237, 237, 237);
+    border-radius: 5px;
+    width: 600px;
+    padding-left: 2px;
 }
 
-.buttonEditorial {
-    background-color: rgb(3, 179, 255);
-    border: solid 1px rgb(3, 179, 255);
+
+
+/* <!-- setting all button color of section > divTask > li ----------------------------------------------- --> */
+
+.buttonEditorial, .button-Q1-goals,
+.button-Recruiting, .button-Mobile,
+.button-Websites, .button-Sales,
+.buttonEditorial{
+
     color: white;
     border-radius: 12px;
     margin: 3px 2px 2px 0px;
-    padding: 3px 6px 3px 6px;
+    padding: 4px 6px 4px 6px;
     border: solid 1px;
 }
+
+.buttonEditorial {
+    background-color: rgb(3, 179, 255);   
+}
+.buttonEditorial:hover {
+    background-color: rgb(0, 140, 200);   
+}
+.button-Q1-goals{
+    background-color: rgb(3, 179, 255); 
+}
+.button-Q1-goals:hover{
+    background-color: rgb(0, 129, 185); 
+}
+.button-Recruiting{
+    background-color: rgb(119, 0, 255); 
+}
+.button-Recruiting:hover{
+    background-color: rgb(85, 0, 183); 
+}
+.button-Mobile{
+    background-color: rgb(0, 171, 160); 
+}
+.button-Mobile:hover{
+    background-color: rgb(0, 137, 128); 
+}
+.button-Websites{
+    background-color: rgb(255, 154, 3); 
+}
+.button-Websites:hover{
+    background-color: rgb(202, 121, 0); 
+}
+.button-Sales{
+    background-color: rgb(219, 79, 205); 
+}
+.button-Sales:hover{
+    background-color: rgb(182, 0, 164); 
+}
+.buttonEditorial{
+    background-color: rgb(138, 180, 101); 
+}
+.buttonEditorial:hover{
+    background-color: rgb(122, 156, 91); 
+}
+
+
+
+
+
+
