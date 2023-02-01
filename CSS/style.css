@@ -107,7 +107,7 @@ ul {
     margin-top: 20px;
     margin-left: 50px;
 }
-.divAddTask #iconTask {
+.divAddTask .iconTask {
     font-size: 22px;
 }
 .divAddTask h3 {
@@ -118,12 +118,6 @@ ul {
     list-style-type: none;
     display: inline-block;
     padding: 3px 0 3px 0;
-}
-.divAddTask ul:hover{
-    background-color: rgb(237, 237, 237);
-    border-radius: 5px;
-    width: 600px;
-    padding-left: 2px;
 }
 
 
@@ -136,10 +130,11 @@ ul {
 .buttonEditorial{
 
     color: white;
-    border-radius: 12px;
+    border-radius: 15px;
     margin: 3px 2px 2px 0px;
     padding: 4px 6px 4px 6px;
-    border: solid 1px;
+    
+    font-size: 16px;
 }
 
 .buttonEditorial {
